@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #fbf8f1;
+}
+
+.headercontent {
+  background-image: url(https://images.unsplash.com/photo-1605184861755-8f190fea96a5?);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 120px;
+  max-width: 100%;
+}
+
+.headerlogo {
+  max-width: 60px;
+  position: relative;
+  padding-top: 2%;
+}
+
+.titulo1 {
+  text-align: center;
+}
