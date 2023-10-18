@@ -5,6 +5,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   background-color: #fbf8f1;
+  margin: 0px;
 }
 
 .headercontent {
@@ -24,4 +25,35 @@ body {
 
 .titulo1 {
   text-align: center;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.project-content {
+  padding: 20px; /* Adicione o espaçamento desejado */
+}
+
+.about {
+  display: flex;
+}
+
+.img-bio {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.aboutme {
+  text-align: center;
+}
+
+blockquote {
+  margin-top: 12%;
+  font-size: 13px;
+}
+cite {
+  font-size: 13px;
 }
