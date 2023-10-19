@@ -83,6 +83,11 @@ cite {
   color: #fa7bb0;
 }
 
+.buttonsource:hover {
+  background-color: #fcbbd5;
+  color: #fbf8f1;
+}
+
 .buttonview {
   text-decoration: none;
   display: inline-flex;
@@ -95,6 +100,11 @@ cite {
 
   background: #fa7bb0;
 }
+
+.buttonview:hover {
+  background-color: #fcbbd5;
+  color: #fbf8f1;
+}
 .buttonmail {
   text-decoration: none;
   display: inline-flex;
@@ -105,6 +115,10 @@ cite {
   border: 2px solid #000000;
   color: #000000;
   margin-bottom: 8px;
+}
+
+.buttonmail:hover {
+  background-color: #00000045;
 }
 
 ul {
@@ -129,7 +143,10 @@ ul {
 }
 
 .text-contact {
-  text-align: left;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
