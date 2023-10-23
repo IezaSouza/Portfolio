@@ -2,9 +2,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #fa7bb0;
+  --color-secondary: #fbf8f1;
+  --font-family: "Quicksand", sans-serif;
+}
+
 body {
-  font-family: "Quicksand", sans-serif;
-  background-color: #fbf8f1;
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
   margin: 0px;
 }
 
@@ -37,6 +43,11 @@ body {
 
   background: #ffffff;
 }
+
+.buttonheader:hover {
+  background-color: #fcbbd5;
+  color: #fa5fad94;
+}
 header {
   text-align: center;
   margin: 120px;
@@ -46,7 +57,7 @@ h2 {
   text-align: center;
 }
 .about {
-  background-color: #fa7bb0;
+  background-color: var(--color-primary);
   border-radius: 58px 0px 96px 0px;
   margin-bottom: 50px;
 }
@@ -93,14 +104,14 @@ cite {
   align-items: flex-start;
   gap: 10px;
   border-radius: 5px;
-  border: 2px solid #fa7bb0;
+  border: 2px solid var(--color-primary);
   text-decoration: none;
-  color: #fa7bb0;
+  color: var(--color-primary);
 }
 
 .buttonsource:hover {
   background-color: #fcbbd5;
-  color: #fbf8f1;
+  color: var(--color-secondary);
 }
 
 .buttonview {
@@ -110,15 +121,15 @@ cite {
   align-items: flex-start;
   gap: 10px;
   border-radius: 5px;
-  border: 2px solid #fa7bb0;
-  color: #fbf8f1;
+  border: 2px solid var(--color-primary);
+  color: var(--color-secondary);
 
-  background: #fa7bb0;
+  background: var(--color-primary);
 }
 
 .buttonview:hover {
   background-color: #fcbbd5;
-  color: #fbf8f1;
+  color: var(--color-secondary);
 }
 .buttonmail {
   text-decoration: none;
@@ -142,6 +153,7 @@ ul {
   justify-content: center;
   padding: 0;
 }
+
 .icones-socialmedia {
   max-width: 50px;
   padding: 10px 10px;
@@ -153,7 +165,7 @@ ul {
 
 .contact-background {
   margin-top: 90px;
-  background-color: #fa7bb0;
+  background-color: var(--color-primary);
   border-radius: 13px 120px;
 }
 
@@ -169,5 +181,5 @@ footer {
   border: dotted;
   border-width: 6px 2px;
   border-radius: 13px 120px;
-  border-color: #fa7bb0;
+  border-color: var(--color-primary);
 }
