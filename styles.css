@@ -15,12 +15,27 @@ body {
   background-position: left center;
   height: 120px;
   max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headerlogo {
   max-width: 60px;
   position: relative;
   padding-top: 2%;
+}
+
+.buttonheader {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 5px 6px;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 2px solid #fa5fad94;
+  color: #fa5fad;
+
+  background: #ffffff;
 }
 header {
   text-align: center;
