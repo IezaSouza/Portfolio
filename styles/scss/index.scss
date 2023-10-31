@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import "variables";
+@import "buttons";
+
+// npm run scss
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  body {
+    background-color: #cdffa48f;
+  }
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-secondary;
+  margin: 0px;
+}
+
+.headercontent {
+  background-image: url(/img/dim-gunger-3emffQOvHxA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 120px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerlogo {
+  max-width: 60px;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  margin: 155px;
+}
+
+h2 {
+  text-align: center;
+}
+.about {
+  background: radial-gradient(
+    circle,
+    rgba(13, 151, 159, 0.7793242296918768) 0%,
+    rgba(183, 140, 228, 0.7905287114845938) 100%
+  );
+  margin-bottom: 50px;
+}
+article {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: #25282b;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.project-content {
+  padding: 30px 15px;
+}
+
+.projects-img {
+  margin-left: auto;
+  width: 100%;
+  max-width: 280px;
+  max-height: 202px;
+  border-radius: 25px;
+}
+
+.about {
+  display: flex;
+}
+
+.img-bio {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 320px;
+  height: auto;
+  padding: 10px;
+}
+
+.aboutme {
+  text-align: center;
+}
+
+blockquote {
+  margin-top: 12%;
+  font-size: 13px;
+}
+cite {
+  font-size: 13px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.icones-socialmedia {
+  max-width: 50px;
+  padding: 10px 10px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-background {
+  margin-top: 90px;
+  background: radial-gradient(
+    circle,
+    rgba(13, 151, 159, 0.7793242296918768) 0%,
+    rgba(183, 140, 228, 0.7905287114845938) 100%
+  );
+  border-radius: 13px 120px;
+}
+
+.text-contact {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  border: dotted;
+  border-width: 6px 2px;
+  border-radius: 13px 120px;
+  background: radial-gradient(
+    circle,
+    rgba(13, 151, 159, 0.7793242296918768) 0%,
+    rgba(183, 140, 228, 0.7905287114845938) 100%
+  );
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  border: 2px solid $color-secondary;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 21px;
+}
