@@ -15,15 +15,10 @@
   <body>
     <div class="headercontent">
       <div class="headerlogo">
-        <img src="img/programming.png" alt="logo" class="headerlogo" />
+        <img src="img/iconheader.png" alt="logo" class="headerlogo" />
       </div>
       <div>
-        <a href="./pages/blog.html" target="_blank" class="buttonheader"
-          ><b>Blog</b></a
-        >
-        <a href="./pages/contactme.html" target="_blank" class="buttonheader"
-          ><b>Message Me</b></a
-        >
+        <a href="#contact" class="button"><b>Message Me</b></a>
       </div>
     </div>
     <header>
@@ -31,11 +26,11 @@
         Hello, my name is Ieza Souza <br />
         I’m a Full Stack Web Developer
       </h1>
-      <a href="#contact" class="buttonsource"><b> Find out more</b></a>
+      <a href="#about" class="button"><b> Find out more</b></a>
     </header>
     <main>
       <section id="about" class="about">
-        <img class="img-bio" src="./img/IMG_5473.JPEG" alt="IezaSouza" />
+        <img class="img-bio" src="./img/fotoaboutme.JPEG" alt="IezaSouza" />
         <div class="aboutme">
           <h2 class="heading">About Me</h2>
           <p>
@@ -54,7 +49,7 @@
           <a
             href="Ieza Souza Curriculo English.pdf"
             target="_blank"
-            class="buttonmail"
+            class="button"
             >View resume</a
           >
 
@@ -64,98 +59,70 @@
           <cite>Brian Kernighan</cite>
         </div>
       </section>
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <article>
-          <div class="project-content">
-            <h3>Forms Project</h3>
-            <p>
-              This project seamlessly combines HTML and CSS to create efficient
-              forms for smooth data input and interaction.
-            </p>
-            <a
-              href="https://github.com/IezaSouza/Forms"
-              target="_blank"
-              class="buttonsource"
-              >Source Code</a
-            >
-            <a
-              href="https://iezasouza.github.io/Forms/"
-              target="_blank"
-              class="buttonview"
-              >View Project</a
-            >
-          </div>
-          <img class="projects-img" src="./img/Forms.png" alt="" />
-        </article>
-        <article>
-          <div class="project-content">
-            <h3>Tables Project</h3>
-            <p>
-              This tables project organizes data with HTML and CSS. To make
-              information look great and easy to manage.
-            </p>
-            <a
-              href="https://github.com/IezaSouza/Tables"
-              target="_blank"
-              class="buttonsource"
-              >Source Code</a
-            >
-            <a
-              href="https://iezasouza.github.io/Tables/"
-              target="_blank"
-              class="buttonview"
-              >View Project</a
-            >
-          </div>
-          <img class="projects-img" src="./img/Tables.png" alt="" />
-        </article>
-        <!--<article>
-          <div class="project-content">
-            <h3>Project 3</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus quo commodi veniam tempore fuga, totam eaque rerum
-              nihil impedit officia porro, ullam voluptate minus. Facilis
-              explicabo optio enim excepturi fugit!
-            </p>
-            <a
-              href="https://github.com/IezaSouza/Portfolio"
-              target="_blank"
-              class="buttonsource"
-              >Source Code</a
-            >
-            <a
-              href="https://iezasouza.github.io/Portfolio/"
-              target="_blank"
-              class="buttonview"
-              >View Project</a
-            >
-          </div>
-          <img class="projects-img" src="./img/PortfolioPreview.png" alt="" />
-        </article> -->
+      <section id="see-projects" class="see-projects">
+        <p>Discover my portfolio and dive into <b>my projects</b>!</p>
+        <a href="./pages/projects.html" target="_blank" class="link">
+          <svg
+            viewBox="0 0 200 200"
+            width="200"
+            height="200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="link__svg"
+            aria-labelledby="link1-title link1-desc"
+          >
+            <title id="link1-title">Check it out</title>
+            <desc id="link1-desc">
+              A rotating link with text placed around a circle with an arrow
+              inside
+            </desc>
+
+            <path
+              id="link-circle"
+              class="link__path"
+              d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+              stroke="none"
+              fill="none"
+            />
+
+            <path
+              class="link__arrow"
+              d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"
+              fill="none"
+            />
+
+            <text class="link__text">
+              <textPath href="#link-circle" stroke="none">
+                Check it out
+              </textPath>
+            </text>
+          </svg>
+        </a>
       </section>
       <section id="contact" class="contact">
         <div class="contact-background">
-          <h2>Contact</h2>
           <p class="text-contact">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            minus ipsum quasi non quod explicabo reprehenderit optio unde, ab
-            sapiente ratione rerum in ducimus. Quidem praesentium molestiae
-            distinctio minima! Facilis.
+            <em>
+              I'd love to hear from you! Whether you have a project idea, a job
+              opportunity, or just want to say hello, feel free to drop me a
+              message.</em
+            >
           </p>
-          <a href="mailto:iezamalafaia@icloud.com" class="buttonmail"
-            >Let's Talk</a
-          >
+          <a href="mailto:iezamalafaia@icloud.com"
+            ><img
+              src="img/mail.png"
+              alt="icone email"
+              class="icone-mail"
+              style="max-width: 35px"
+          /></a>
         </div>
       </section>
     </main>
     <footer>
       <ul class="footer-links">
         <li>
-          <a href="https://pt.linkedin.com/" target="_blank"
+          <a href="https://www.linkedin.com/in/ieza-souza/" target="_blank"
             ><img
-              src="img/linkedin.png"
+              src="img/linkedin (1).png"
               alt="icone linkedin"
               class="icones-socialmedia"
           /></a>
@@ -163,29 +130,13 @@
         <li>
           <a href="https://github.com/IezaSouza" target="_blank"
             ><img
-              src="img/github.png"
+              src="img/github (2).png"
               alt="icone github"
               class="icones-socialmedia"
           /></a>
         </li>
-        <li>
-          <a href="https://twitter.com/?lang=pt" target="_blank"
-            ><img
-              src="img/twitter.png"
-              alt="icone twitter"
-              class="icones-socialmedia"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><img
-              src="img/instagram (1).png"
-              alt="icone instagram"
-              class="icones-socialmedia"
-          /></a>
-        </li>
       </ul>
-      <p>@ 2023 - Portfolio Design by Ieza Souza</p>
+      <p><b>@ 2023 - Portfolio Design by Ieza Souza</b></p>
     </footer>
   </body>
 </html>

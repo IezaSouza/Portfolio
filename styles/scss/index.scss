@@ -1,26 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import "variables";
 @import "buttons";
-
-// npm run scss
-* {
-  box-sizing: border-box;
-}
-
-@media (min-width: 600px) and (max-width: 700px) {
-  body {
-    background-color: #cdffa48f;
-  }
-}
+@import "cards";
 
 body {
   font-family: $font-family;
-  background-color: $color-secondary;
-  margin: 0px;
+  background-color: $color-primary;
+  margin: 0;
 }
 
 .headercontent {
-  background-image: url(/img/dim-gunger-3emffQOvHxA-unsplash.jpg);
+  background-image: url(../../img/cabeçalho.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
@@ -29,11 +19,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.headerlogo {
-  max-width: 60px;
-  position: relative;
+  .headerlogo {
+    max-width: 60px;
+    position: relative;
+  }
 }
 
 header {
@@ -44,27 +34,33 @@ header {
 h2 {
   text-align: center;
 }
+
 .about {
   background: radial-gradient(
     circle,
-    rgba(13, 151, 159, 0.7793242296918768) 0%,
-    rgba(183, 140, 228, 0.7905287114845938) 100%
+    rgba(13, 151, 159, 0.38) 0%,
+    rgba(183, 140, 228, 0.42) 100%
   );
   margin-bottom: 50px;
 }
+
 article {
   display: flex;
   align-items: center;
   margin-top: 20px;
   color: #25282b;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
 }
+
 .project-content {
   padding: 30px 15px;
+  padding: 30px 15px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #d3c8e7, #56b0b9) border-box;
+  border: 2px solid transparent;
 }
 
 .projects-img {
@@ -73,29 +69,33 @@ article {
   max-width: 280px;
   max-height: 202px;
   border-radius: 25px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #d3c8e7, #56b0b9) border-box;
+  border: 2px solid transparent;
 }
 
 .about {
   display: flex;
-}
 
-.img-bio {
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  width: 320px;
-  height: auto;
-  padding: 10px;
-}
+  .img-bio {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 320px;
+    height: auto;
+    padding: 10px;
+  }
 
-.aboutme {
-  text-align: center;
-}
+  .aboutme {
+    text-align: center;
+  }
 
-blockquote {
-  margin-top: 12%;
-  font-size: 13px;
-}
-cite {
-  font-size: 13px;
+  blockquote {
+    margin-top: 12%;
+    font-size: 13px;
+  }
+
+  cite {
+    font-size: 13px;
+  }
 }
 
 ul {
@@ -103,59 +103,69 @@ ul {
   list-style-type: none;
   justify-content: center;
   padding: 0;
-}
+  margin-top: 0;
 
-.icones-socialmedia {
-  max-width: 50px;
-  padding: 10px 10px;
+  .icones-socialmedia {
+    max-width: 60px;
+    padding: 10px 5px;
+  }
 }
 
 .contact {
   text-align: center;
-}
 
-.contact-background {
-  margin-top: 90px;
-  background: radial-gradient(
-    circle,
-    rgba(13, 151, 159, 0.7793242296918768) 0%,
-    rgba(183, 140, 228, 0.7905287114845938) 100%
-  );
-  border-radius: 13px 120px;
-}
+  .contact-background {
+    margin-top: 180px;
+    border-image: linear-gradient(
+        rgba(183, 140, 228, 0.42) 0%,
+        rgba(13, 151, 159, 0.8) 100%
+      )
+      30;
+    border-width: 4px;
+    border-style: solid;
+  }
 
-.text-contact {
-  height: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .text-contact {
+    height: 2em;
+  }
 }
 
 footer {
   text-align: center;
-  border: dotted;
-  border-width: 6px 2px;
-  border-radius: 13px 120px;
-  background: radial-gradient(
-    circle,
-    rgba(13, 151, 159, 0.7793242296918768) 0%,
-    rgba(183, 140, 228, 0.7905287114845938) 100%
-  );
+  background-image: url(../../img/cabeçalho.jpg);
+  background-size: cover;
+  background-position: right bottom;
+  height: 130px;
+  max-width: 100%;
+  color: #000;
+  text-shadow: 0 0 8px #98efff, 0 0 7px #fff;
 }
 
 .heading {
   position: relative;
   text-align: center;
   padding-bottom: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    border: 2px solid $color-primary;
+    top: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 21px;
+  }
 }
 
-.heading::after {
-  content: "";
-  position: absolute;
-  width: 56px;
-  border: 2px solid $color-secondary;
-  top: 100%;
-  transform: translateX(-50%);
-  left: 50%;
-  border-radius: 21px;
+.see-projects {
+  margin-top: 180px;
+  border-image: linear-gradient(
+      rgba(183, 140, 228, 0.42) 0%,
+      rgba(13, 151, 159, 0.8) 100%
+    )
+    30;
+  border-width: 4px;
+  border-style: solid;
+  text-align: center;
 }

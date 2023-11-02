@@ -1,3 +1,12 @@
-$color-primary: #fa7bb0;
-$color-secondary: #fbf8f1;
+$color-primary: #fbf8f1;
 $font-family: "Quicksand", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  body {
+    background-color: #cdffa48f;
+  }
+}
